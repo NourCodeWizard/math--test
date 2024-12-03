@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Test</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+<body>
+    <!-- Form Section -->
+    <div id="formSection">
+        <h1>Enter Your Details</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+        <label for="id">ID:</label>
+        <input type="text" id="id" placeholder="Enter your ID"><br><br>
+        <button id="nextBtn" style="display:none;">Next</button>
+    </div>
+
+    <!-- Test Section -->
+    <div id="testSection">
+        <h1>Take the Test</h1>
+        <div id="questionsContainer"></div>
+        <button id="submitBtn">Submit</button>
+        <button id="backBtn">Back</button>
+    </div>
+
+<!-- Teacher Section -->
+<div id="teacherSection" style="display: none;">
+    <h1>Teacher's Dashboard</h1>
+    <label for="teacherId">Enter Teacher ID:</label>
+    <input type="password" id="teacherId" placeholder="Teacher ID"><br><br>
+    <button id="downloadBtn" style="display: none;">Download Results</button>
+</div>
+<!-- Button to show Teacher's Section -->
+<button id="showTeacherDashboard">Access Teacher's Dashboard</button>
+
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
